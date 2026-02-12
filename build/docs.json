@@ -937,7 +937,8 @@
                     {
                       "group": "Command line interface",
                       "pages": [
-                        "oss/python/deepagents/cli"
+                        "oss/python/deepagents/cli/overview",
+                        "oss/python/deepagents/cli/providers"
                       ]
                     }
                   ]
@@ -1291,7 +1292,8 @@
                     {
                       "group": "Deep Agents CLI",
                       "pages": [
-                        "oss/javascript/deepagents/cli"
+                        "oss/javascript/deepagents/cli/overview",
+                        "oss/javascript/deepagents/cli/providers"
                       ]
                     }
                   ]
@@ -1696,6 +1698,14 @@
     {
       "source": "/deepagents",
       "destination": "/oss/python/deepagents/overview"
+    },
+    {
+      "source": "/oss/python/deepagents/cli",
+      "destination": "/oss/python/deepagents/cli/overview"
+    },
+    {
+      "source": "/oss/javascript/deepagents/cli",
+      "destination": "/oss/javascript/deepagents/cli/overview"
     },
     {
       "source": "/langsmith",
