@@ -128,7 +128,7 @@ jobs:
             ls -la "${{ github.workspace }}/" || true
             exit 1
           fi
-          ./bin/htmltest -l 2 "$ROOT" 2>&1 | tee htmltest-output.txt
+          ./bin/htmltest -c .htmltest.yml -l 2 "$ROOT" 2>&1 | tee htmltest-output.txt
         continue-on-error: true
 
       - name: "Upload htmltest output"
