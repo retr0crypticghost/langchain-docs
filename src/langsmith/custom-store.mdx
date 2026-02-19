@@ -31,8 +31,7 @@ SQLite is not recommended for use in production deployments.
 import contextlib
 from typing import cast
 
-from langchain.embeddings import init_embeddings
-from langchain_core.embeddings import Embeddings
+from langchain.embeddings import init_embeddings, Embeddings
 from langgraph.store.base import IndexConfig
 from langgraph.store.sqlite import AsyncSqliteStore
 
