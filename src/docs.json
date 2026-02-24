@@ -763,7 +763,8 @@
                       "group": "Enable features",
                       "pages": [
                         "langsmith/agent-builder-self-hosted",
-                        "langsmith/insights-self-hosted"
+                        "langsmith/insights-self-hosted",
+                        "langsmith/polly-self-hosted"
                       ]
                     },
                     {
