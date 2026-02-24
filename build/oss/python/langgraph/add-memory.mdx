@@ -382,7 +382,7 @@ graph = builder.compile(checkpointer=checkpointer)  # [!code highlight]
 
 
 
-If you want the subgraph to have its own memory, you can compile it with the appropriate checkpointer option. This is useful in [multi-agent](/oss/python/langchain/multi-agent) systems, if you want agents to keep track of their internal message histories.
+You can configure subgraph-specific checkpointing behavior. See [subgraph persistence](/oss/python/langgraph/use-subgraphs#subgraph-persistence) for details on persistence levels including interrupt support and stateful continuations.
 
 ```python
 subgraph_builder = StateGraph(...)

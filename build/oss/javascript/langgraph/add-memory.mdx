@@ -137,7 +137,7 @@ const graph = builder.compile({ checkpointer });
 ```
 
 
-If you want the subgraph to have its own memory, you can compile it with the appropriate checkpointer option. This is useful in [multi-agent](/oss/javascript/langchain/multi-agent) systems, if you want agents to keep track of their internal message histories.
+You can configure subgraph-specific checkpointing behavior. See [subgraph persistence](/oss/javascript/langgraph/use-subgraphs#subgraph-persistence) for details on persistence levels including interrupt support and stateful continuations.
 
 
 
