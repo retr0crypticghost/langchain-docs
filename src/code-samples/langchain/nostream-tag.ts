@@ -2,7 +2,7 @@
  * Example of using nostream tag to exclude LLM output from the stream.
  */
 
-// :snippet-start: nostream-tag
+// :snippet-start: nostream-tag-js
 import { ChatAnthropic } from "@langchain/anthropic";
 import { StateGraph, StateSchema, START } from "@langchain/langgraph";
 import * as z from "zod";

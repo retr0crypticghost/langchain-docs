@@ -1,6 +1,6 @@
 """Example of using nostream tag to exclude LLM output from the stream."""
 
-# :snippet-start: nostream-tag
+# :snippet-start: nostream-tag-py
 from typing import Any, TypedDict, cast
 
 from langchain_anthropic import ChatAnthropic
@@ -58,7 +58,6 @@ initial_state: State = {
     "internal_analysis": "",
 }
 stream = graph.stream(cast("Any", initial_state), stream_mode="messages")
-# :snippet-end:
 
 # :remove-start:
 # Stream with "messages" mode - only tokens from streaming_model will appear
@@ -74,3 +73,4 @@ assert "analyze_internally" not in streamed_nodes, (
 if __name__ == "__main__":
     print("\n✓ nostream tag example works as expected")  # noqa: T201
 # :remove-end:
+# :snippet-end:
