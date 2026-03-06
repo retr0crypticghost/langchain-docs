@@ -42,15 +42,7 @@ def main() -> None:
             content = snippet_file.read_text(encoding="utf-8")
             # Create MDX with fenced code block
             mdx_content = f"```{language}\n{content.rstrip()}\n```\n"
-            # Output filename: tool-return-values-py.mdx from return-a-string.snippet.tool-return-values-py.py
-            # Snippet names include language suffix (-py, -js); avoid double suffix
-            snippet_name = ".".join(snippet_file.stem.split(".")[2:])
-            mdx_filename = (
-                f"{snippet_name}.mdx"
-                if snippet_name.endswith(suffix)
-                else f"{snippet_name}{suffix}.mdx"
-            )
-            mdx_path = snippets_dir / mdx_filename
+            mdx_path = snippets_dir / f"{snippet_name}.mdx"
             mdx_path.write_text(mdx_content, encoding="utf-8")
             print(f"Generated {mdx_path.relative_to(repo_root)}")
 
