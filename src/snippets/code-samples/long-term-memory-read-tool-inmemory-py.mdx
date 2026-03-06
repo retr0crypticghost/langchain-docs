@@ -32,10 +32,10 @@ store.put(
 def get_user_info(runtime: ToolRuntime[Context]) -> str:
     """Look up user info."""
     # Access the store - same as that provided to `create_agent`
-    store = runtime.store
+    assert runtime.store is not None
     user_id = runtime.context.user_id
     # Retrieve data from store - returns StoreValue object with value and metadata
-    user_info = store.get(("users",), user_id)
+    user_info = runtime.store.get(("users",), user_id)
     return str(user_info.value) if user_info else "Unknown user"
 
 
