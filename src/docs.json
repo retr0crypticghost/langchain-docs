@@ -1066,7 +1066,8 @@
                         "oss/python/langchain/frontend/message-queues",
                         "oss/python/langchain/frontend/join-rejoin",
                         "oss/python/langchain/frontend/time-travel",
-                        "oss/python/langchain/frontend/generative-ui"
+                        "oss/python/langchain/frontend/generative-ui",
+                        "oss/python/langchain/frontend/integrations"
                       ]
                     },
                     {
@@ -1456,7 +1457,8 @@
                         "oss/javascript/langchain/frontend/message-queues",
                         "oss/javascript/langchain/frontend/join-rejoin",
                         "oss/javascript/langchain/frontend/time-travel",
-                        "oss/javascript/langchain/frontend/generative-ui"
+                        "oss/javascript/langchain/frontend/generative-ui",
+                        "oss/javascript/langchain/frontend/integrations"
                       ]
                     },
                     {
