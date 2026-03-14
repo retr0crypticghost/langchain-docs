@@ -657,9 +657,9 @@ To build and run a valid application, the LangGraph CLI requires a JSON configur
     | `--start-time TEXT` |  | ISO8601 start time. Example: `2026-03-08T00:00:00Z`. |
     | `-q, --query TEXT` |  | Search string filter. |
     | `--limit INTEGER` | `100` | Max log entries to fetch. |
-    | `--level [DEBUG|INFO|WARNING|ERROR|CRITICAL]` |  | Filter by log level. |
+    | `--level [DEBUG\|INFO\|WARNING\|ERROR\|CRITICAL]` |  | Filter by log level. |
     | `--revision-id TEXT` |  | Specific revision ID. For build logs, defaults to the latest revision. |
-    | `--type [deploy|build]` | `deploy` | Log stream to fetch. `deploy` shows agent server runtime logs. `build` shows remote build logs. |
+    | `--type [deploy\|build]` | `deploy` | Log stream to fetch. `deploy` shows agent server runtime logs. `build` shows remote build logs. |
     | `--deployment-id TEXT` |  | Deployment ID. If omitted, `--name` is used to find the deployment. |
     | `--name TEXT` | Current directory name | Deployment name. Can also be set via `LANGSMITH_DEPLOYMENT_NAME` environment variable or `.env` file. Used when `--deployment-id` is not provided. |
     | `--api-key TEXT` |  | API key. Can also be set via `LANGGRAPH_HOST_API_KEY`, `LANGSMITH_API_KEY`, or `LANGCHAIN_API_KEY` environment variable or `.env` file. |
