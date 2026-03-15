@@ -21,6 +21,28 @@ rss: true
 **Download the Helm chart:** [`langsmith-auth-proxy-0.0.3.tgz`](https://github.com/langchain-ai/helm/releases/download/langsmith-auth-proxy-0.0.3/langsmith-auth-proxy-0.0.3.tgz)
 </Update>
 
+<Update label="2026-03-15" tags={["self-hosted"]}>
+## langsmith-auth-proxy-0.0.4
+
+- Rejected insecure default JWT secret at startup for Agent Builder, enhancing security.
+- Ensured Eppo control panel renders above Polly in the frontend for improved user experience.
+- Standardized dropdown width and height in Bedrock and Azure model config in the playground.
+- Updated prompt owners dialog for full backward compatibility in the frontend.
+- Included per-annotator feedback detail in experiments CSV export for enhanced data insights.
+- Added a new GET /me/slack_id endpoint in Agent Builder.
+- Implemented Slack authorization with is_user_permitted_for_agent in Agent Builder.
+- Added strict validation to prebuilt evaluator schemas and automated sync on model switch in the frontend.
+- Fixed a generator bug on frontend related to custom Slack bot integration.
+- Improved HTTP authentication security in message_received.py.
+- Added forge settings page with an experimental UI for enhanced configurability.
+- Enhanced UI by centering elements on the no access page.
+- Refactored Consolidated multiple tooltips into one hover popover for better UI experience.
+- Redesigned feedback chip popover for a modernized look.
+- Added real-time sub-agent streaming UI in Agent Builder for dynamic updates.
+
+**Download the Helm chart:** [`langsmith-auth-proxy-0.0.4.tgz`](https://github.com/langchain-ai/helm/releases/download/langsmith-auth-proxy-0.0.4/langsmith-auth-proxy-0.0.4.tgz)
+</Update>
+
 <Update label="2026-03-13" tags={["self-hosted"]}>
 ## langsmith-0.13.26
 
