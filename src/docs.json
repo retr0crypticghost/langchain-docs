@@ -1907,6 +1907,10 @@
       "destination": "/oss/python/deepagents/overview"
     },
     {
+      "source": "/deepagents-cli",
+      "destination": "/oss/python/deepagents/cli/overview"
+    },
+    {
       "source": "/oss/python/deepagents/cli",
       "destination": "/oss/python/deepagents/cli/overview"
     },
