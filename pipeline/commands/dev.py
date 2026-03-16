@@ -64,9 +64,6 @@ async def dev_command(
 
     Returns:
         Exit code: 0 for success, 1 for failure.
-
-    Raises:
-        KeyboardInterrupt: When the user interrupts the development server.
     """
     logger.info("Starting development mode... (press Ctrl+C to stop)")
 
